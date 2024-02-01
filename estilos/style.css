@@ -1,0 +1,173 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../fotos/fondo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Source Code Pro', monospace;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2.5fr 0.5fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header "
+        "main main image "
+        "footer footer footer";
+}
+
+
+.header {
+    grid-area: header;
+}
+
+.nav__nav {
+    display: flex;
+    border-radius: 5px;
+    margin: 1%;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav__logo {
+    height: 100px;
+}
+
+.nav__boton {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.nav__boton:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.897);
+    background-color: rgba(0, 0, 0, 0.76)
+}
+
+.main {
+    grid-area: main;
+    align-self: center;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.main__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__titulo {
+    color: rgb(0, 0, 0);
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+}
+
+.main__subtitulo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.image {
+    grid-area: image;
+}
+
+.image__fideos {
+    width: 450px;
+    height: 350px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.containerRestaurante {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2.5fr 0.5fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "headerRestaurante headerRestaurante headerRestaurante"
+        "mainRestaurante mainRestaurante mainRestaurante"
+        "footerRestaurante footerRestaurante footerRestaurante";
+}
+
+
+.headerRestaurante {
+    grid-area: headerRestaurante;
+}
+
+.mainRestaurante {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "restaurante1 restaurante2 restaurante3"
+        "restaurante1 restaurante2 restaurante3"
+        "restaurante1 restaurante2 restaurante3";
+    grid-area: mainRestaurante;
+}
+
+.restaurante1 {
+    grid-area: restaurante1;
+    margin: 15px;
+}
+
+.restaurante2 {
+    grid-area: restaurante2;
+    margin: 15px;
+}
+
+.restaurante3 {
+    grid-area: restaurante3;
+    margin: 15px;
+}
+
+.footerRestaurante {
+    grid-area: footer;
+}
+
+.destacadoCarta {
+    position: absolute;
+    top: 20%;
+    right: 68%;
+    font-size: 460%;
+}
+
+.menuCarta {
+    position: fixed;
+    left: 78%;
+    top: 10%;
+}
+
+.menu {
+    border-radius: 5px;
+    margin-top: 90px;
+
+    margin-left: 160px;
+    margin-right: 500px;
+
+}
+
+
+.imagenMenu {
+    height: 280px;
+    width: 350px;
+    border-radius: 20px;
+}
