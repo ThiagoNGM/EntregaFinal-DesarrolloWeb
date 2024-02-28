@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RincónPastaFresca</title>
+    <title>Informacion sobre RincónPastaFresca</title>
     <link rel="icon" type="image/.ico" href="../fotos/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="descrption="
+        content="¡Explora nuestra página para conocer nuestros platos, ubicaciones y opciones de entrega a domicilio!">
 </head>
 
 <body>
-    <header class="header">
+    <header class="headerNosotros">
         <nav class="navbar navbar-expand-lg bg-body-tertiary nav__nav">
             <div class="container-fluid">
-                
+
                 <div>
                     <a class="navbar-brand" href="../index.html"> <img class="nav__logo" src="../fotos/pasta.png"
                             alt="logo"></a>
@@ -31,7 +37,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav " >
+                    <div class="navbar-nav ">
                         <a class="nav-link nav__boton" href="./Restaurantes.html">Restaurantes</a>
                         <a class="nav-link nav__boton" href="./carta.html">Carta</a>
                         <a class="nav-link nav__boton" href="./nosotros.html">Nosotros</a>
@@ -43,13 +49,99 @@
     </header>
 
 
-    <main>
-        <h1>en proceso</h1>
+    <main class="mainNosotros">
+        <h1 class=" titulo ">Preguntas Frecuentes</h1>
+        <div class="accordion accordion-flush infoAcordion " id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed botonNosotros" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Inicios del restaurante
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        RinconPastaFresca fue creado por Juan Pérez, un apasionado de la gastronomía italiana, que
+                        después de años de experiencia y admiración por esta cocina, decidió abrir un restaurante
+                        especializado en pastas frescas en Argentina. Con una planificación meticulosa y un enfoque en
+                        la autenticidad y la calidad de los ingredientes, el restaurante se estableció con éxito,
+                        atrayendo a una clientela fiel desde su apertura inicial. Impulsado por el éxito,
+                        RinconPastaFresca continuó creciendo y expandiéndose, manteniendo siempre su compromiso con la
+                        excelencia culinaria y la satisfacción del cliente</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed botonNosotros" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Popularizacion del restaurante
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        RinconPastaFresca logró expandirse a nivel nacional
+                        gracias a su éxito inicial en una ubicación estratégica. La calidad de su comida y servicio
+                        generó una sólida reputación y un boca a boca positivo. La expansión se llevó a cabo
+                        gradualmente, primero a nivel local y luego nacional, con una atención constante a la calidad y
+                        la innovación en el menú. La adaptación a los gustos regionales y una sólida estrategia de
+                        marketing respaldaron su crecimiento, manteniendo siempre la excelencia en la experiencia del
+                        cliente en todas sus ubicaciones.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed botonNosotros" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Pedidos a domicilio
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">RinconPastaFresca ofrece servicio de comida a domicilio mediante una
+                        plataforma de pedidos en línea, integrándose con aplicaciones de entrega como Uber Eats o Rappi.
+                        El restaurante garantiza la calidad de sus platos preparados en cocina, empaquetados
+                        adecuadamente y entregados por su propia flota de repartidores o a través de servicios externos.
+                        Los clientes pueden hacer seguimiento en tiempo real de sus pedidos y reciben atención al
+                        cliente durante todo el proceso de entrega.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed botonNosotros" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Nuestros ingredientes
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        RinconPastaFresca utiliza una variedad de ingredientes frescos y de alta calidad en la
+                        preparación de sus platos de pasta. Estos incluyen harina de trigo para la masa fresca, huevos
+                        frescos, tomates maduros, hierbas frescas como albahaca y perejil, quesos italianos como
+                        parmesano y mozzarella, aceite de oliva virgen extra, verduras frescas como champiñones y
+                        espinacas, y carnes de calidad como pollo y ternera. La selección cuidadosa de ingredientes
+                        contribuye a ofrecer una experiencia gastronómica auténtica y deliciosa para los clientes del
+                        restaurante.
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
     </main>
 
-    <footer>
+    <footer class="footerNosotros">
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>

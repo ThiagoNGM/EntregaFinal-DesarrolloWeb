@@ -1,0 +1,469 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../fotos/fondo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 2.5fr auto;
+  grid-auto-flow: row;
+  grid-template-areas: "header header " "main image " "footer footer";
+}
+.container .header {
+  grid-area: header;
+}
+.container .header .nav__nav {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1%;
+  justify-content: space-between;
+  color: white;
+}
+.container .header .nav__nav .container-fluid .navbar-brand .nav__logo {
+  height: 100px;
+}
+.container .header .nav__nav .container-fluid .collapse .navbar-nav .nav__boton {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container .header .nav__nav .container-fluid .collapse .navbar-nav .nav__boton:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.897);
+  background-color: rgba(0, 0, 0, 0.76);
+}
+.container .main {
+  grid-area: main;
+  align-self: center;
+}
+.container .main .main__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .main .main__main .main__titulo {
+  color: rgb(0, 0, 0);
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2em, 4vw, 8em);
+}
+.container .main .main__main .main__subtitulo {
+  color: rgb(0, 0, 0);
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(1em, 2vw, 4em);
+}
+.container .image {
+  grid-area: image;
+  width: 4 0vw;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: auto;
+}
+.container .image .image__fideos {
+  width: 100%;
+}
+.container .footer {
+  grid-area: footer;
+}
+
+.containerRestaurante {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2.5fr 0.5fr;
+  grid-auto-flow: row;
+  grid-template-areas: "headerRestaurante headerRestaurante headerRestaurante" "mainRestaurante mainRestaurante mainRestaurante" "footerRestaurante footerRestaurante footerRestaurante";
+}
+.containerRestaurante .headerRestaurante {
+  grid-area: headerRestaurante;
+}
+.containerRestaurante .headerRestaurante .nav__nav {
+  display: flex;
+  border-radius: 5px;
+  margin: 1%;
+  border: 1px solid black;
+  justify-content: space-between;
+  color: white;
+}
+.containerRestaurante .headerRestaurante .nav__nav .container-fluid .navbar-brand .nav__logo {
+  height: 100px;
+}
+.containerRestaurante .headerRestaurante .nav__nav .container-fluid .collapse .navbar-nav .nav__boton {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.containerRestaurante .headerRestaurante .nav__nav .container-fluid .collapse .navbar-nav .nav__boton:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.897);
+  background-color: rgba(0, 0, 0, 0.76);
+}
+.containerRestaurante .mainRestaurante {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "restaurante1 restaurante2 restaurante3" "restaurante1 restaurante2 restaurante3" "restaurante1 restaurante2 restaurante3";
+  grid-area: mainRestaurante;
+}
+.containerRestaurante .mainRestaurante .restaurante1 {
+  grid-area: restaurante1;
+  margin: 15px;
+}
+.containerRestaurante .mainRestaurante .restaurante2 {
+  grid-area: restaurante2;
+  margin: 15px;
+}
+.containerRestaurante .mainRestaurante .restaurante3 {
+  grid-area: restaurante3;
+  margin: 15px;
+}
+.containerRestaurante .footerRestaurante {
+  grid-area: footer;
+}
+
+.containerCarta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 2.5fr 0.5fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "headerCarta headerCarta" "mainCarta mainCarta2" "footerCarta footerCarta";
+}
+.containerCarta .headerCarta {
+  grid-area: headerCarta;
+}
+.containerCarta .headerCarta .nav__nav {
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 1%;
+  justify-content: space-between;
+  color: white;
+}
+.containerCarta .headerCarta .nav__nav .container-fluid .navbar-brand .nav__logo {
+  height: 100px;
+}
+.containerCarta .headerCarta .nav__nav .container-fluid .collapse .navbar-nav .nav__boton {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.containerCarta .headerCarta .nav__nav .container-fluid .collapse .navbar-nav .nav__boton:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.897);
+  background-color: rgba(0, 0, 0, 0.76);
+}
+.containerCarta .mainCarta {
+  grid-area: mainCarta;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-right: 2px solid black;
+  padding-right: 20px;
+}
+.containerCarta .mainCarta .comidaCarta {
+  align-self: center;
+}
+.containerCarta .mainCarta .comidaCarta .imagenCarata {
+  width: 100%;
+}
+.containerCarta .mainCarta .subtitulo {
+  color: rgb(0, 0, 0);
+  margin: 100px;
+  align-self: center;
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2em, 4vw, 8em);
+}
+.containerCarta .mainCarta .listadoComoidas {
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  align-self: stretch;
+}
+.containerCarta .mainCarta2 {
+  grid-area: mainCarta2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.containerCarta .mainCarta2 .subtitulo {
+  color: rgb(0, 0, 0);
+  margin: 100px;
+  align-self: center;
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2em, 4vw, 8em);
+}
+.containerCarta .mainCarta2 .comidaCarta {
+  align-self: center;
+}
+.containerCarta .mainCarta2 .comidaCarta .imagenCarata {
+  width: 100%;
+}
+.containerCarta .mainCarta2 .listadoComoidas {
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  align-self: flex-start;
+}
+.containerCarta .footerCarta {
+  grid-area: footerCarta;
+}
+
+.nav__nav {
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 1%;
+  justify-content: space-between;
+  color: white;
+}
+.nav__nav .container-fluid .navbar-brand .nav__logo {
+  height: 100px;
+}
+.nav__nav .container-fluid .collapse .navbar-nav .nav__boton {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav__nav .container-fluid .collapse .navbar-nav .nav__boton:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.897);
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+.mainNosotros .titulo {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  margin: 50px;
+}
+.mainNosotros .infoAcordion {
+  margin: auto 10%;
+  border-radius: 10px;
+}
+.mainNosotros .infoAcordion .accordion-item .accordion-header .botonNosotros {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  padding: 10px;
+  text-align: center;
+}
+.mainNosotros .infoAcordion .accordion-item .accordion-collapse .accordion-body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.containerRegistrarse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 3fr 0.5fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "headerRegistrarse headerRegistrarse" "mainRegistrarse mainRegistrarse" "footerRegistrarse footerRegistrarse";
+}
+
+.headerRegistrarse {
+  grid-area: headerRegistrarse;
+}
+
+.mainRegistrarse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "iniciarsesion registrarse";
+  grid-area: mainRegistrarse;
+}
+.mainRegistrarse .iniciarsesion {
+  grid-area: iniciarsesion;
+  margin: 0px 10%;
+}
+.mainRegistrarse .iniciarsesion .subtitulo {
+  color: rgb(0, 0, 0);
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  margin: 20px;
+  font-size: clamp(2em, 4vw, 8em);
+}
+.mainRegistrarse .iniciarsesion .label {
+  margin: 10px 10px;
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  animation-duration: 4s;
+  animation-name: texto;
+  animation-iteration-count: infinite;
+}
+.mainRegistrarse .iniciarsesion .renglon {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+.mainRegistrarse .iniciarsesion .submit {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px 45%;
+  font-size: 1.5rem;
+  align-self: center;
+}
+.mainRegistrarse .registrarse {
+  grid-area: registrarse;
+  margin: 0px 10%;
+}
+.mainRegistrarse .registrarse .subtitulo {
+  color: rgb(0, 0, 0);
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2em, 4vw, 8em);
+  text-align: center;
+  margin: 20px;
+}
+.mainRegistrarse .registrarse .label {
+  margin: 10px 10px;
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  animation-duration: 4s;
+  animation-name: texto;
+  animation-iteration-count: infinite;
+}
+.mainRegistrarse .registrarse .renglon {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+.mainRegistrarse .registrarse .submit {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px 45%;
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+.footerRegistrarse {
+  grid-area: footerRegistrarse;
+}
+
+@keyframes texto {
+  0% {
+    opacity: 0.5;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*diseño mobile de la pagina principal*/
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr auto auto;
+    gap: 15px;
+    grid-template-areas: "header" "main" "image" "footer";
+  }
+  .main__titulo {
+    font-size: clamp(3em, 4vw, 5em);
+  }
+  .main__subtitulo {
+    font-size: clamp(2em, 3vw, 5em);
+  }
+  /*diseño mobile de la pagina de los restaurantes*/
+  .containerRestaurante {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto auto auto 0.5fr;
+    grid-template-areas: "headerRestaurante" "mainRestaurante" "mainRestaurante" "mainRestaurante" "footerRestaurante";
+  }
+  .mainRestaurante {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "restaurante1" "restaurante2" "restaurante3";
+    grid-area: mainRestaurante;
+  }
+  /*diseño mobile de la pagina de carta*/
+}
+@media screen and (max-width: 1300px) {
+  .containerCarta {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto auto 0.5fr;
+    grid-template-areas: "headerCarta" "mainCarta" "mainCarta2" "footerCarta";
+  }
+  .containerCarta .mainCarta {
+    border-right: none;
+    padding-right: none;
+  }
+  .containerCarta .mainCarta .subtitulo {
+    font-size: clamp(5em, 8vw, 9em);
+  }
+  .containerCarta .mainCarta2 {
+    border-right: none;
+    padding-right: none;
+    margin-left: none;
+  }
+  .containerCarta .mainCarta2 .subtitulo {
+    font-size: clamp(5em, 8vw, 9em);
+  }
+}
+/*diseño mobile de la pagina registrarse*/
+@media screen and (max-width: 1020px) {
+  .containerRegistrarse {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "headerRegistrarse" "mainRegistrarse" "mainRegistrarse" "footerRegistrarse";
+  }
+  .mainRegistrarse {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "iniciarsesion" "registrarse";
+    grid-area: mainRegistrarse;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

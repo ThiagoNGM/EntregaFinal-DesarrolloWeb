@@ -1,0 +1,102 @@
+@media screen and (max-width: 600px) {
+
+    /*diseño mobile de la pagina principal*/
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+        gap: 15px;
+        grid-template-areas:
+            "header"
+            "main"
+            "image"
+            "footer";
+    }
+
+    .main__titulo {
+        font-size: clamp(3em, 4vw, 5em);
+    }
+
+    .main__subtitulo {
+        font-size: clamp(2em, 3vw, 5em);
+    }
+
+    /*diseño mobile de la pagina de los restaurantes*/
+    .containerRestaurante {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr auto auto auto 0.5fr;
+        grid-template-areas:
+            "headerRestaurante"
+            "mainRestaurante"
+            "mainRestaurante"
+            "mainRestaurante"
+            "footerRestaurante";
+    }
+
+    .mainRestaurante {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "restaurante1"
+            "restaurante2"
+            "restaurante3";
+        grid-area: mainRestaurante;
+    }
+    /*diseño mobile de la pagina de carta*/
+    
+}
+@media screen and (max-width: 1300px){
+    .containerCarta {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr auto auto 0.5fr;
+        grid-template-areas:
+            "headerCarta"
+            "mainCarta"
+            "mainCarta2"
+            "footerCarta";
+
+            .mainCarta {
+                border-right: none;
+                padding-right: none;
+                .subtitulo {
+                    font-size: clamp(5em, 8vw, 9em);
+                }
+            }
+            .mainCarta2 {
+                border-right: none;
+                padding-right: none;
+                margin-left: none;
+                .subtitulo {
+                    font-size: clamp(5em, 8vw, 9em);
+                }
+            }
+    }
+}
+/*diseño mobile de la pagina registrarse*/
+@media screen and (max-width: 1020px){
+    .containerRegistrarse {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 3fr 0.5fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "headerRegistrarse"
+            "mainRegistrarse"
+            "mainRegistrarse"
+            "footerRegistrarse";
+    }
+    
+    .mainRegistrarse {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "iniciarsesion"
+            "registrarse";
+        grid-area: mainRegistrarse;
+    }
+}

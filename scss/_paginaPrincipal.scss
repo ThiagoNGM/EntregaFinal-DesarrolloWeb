@@ -1,0 +1,94 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 2.5fr auto;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header "
+        "main image "
+        "footer footer";
+
+    .header {
+        grid-area: header;
+
+        .nav__nav {
+            display: flex;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 1%;
+            justify-content: space-between;
+            color: white;
+
+            .container-fluid {
+                .navbar-brand {
+                    .nav__logo {
+                        height: 100px;
+                    }
+                }
+
+                .collapse {
+                    .navbar-nav {
+                        .nav__boton {
+                            color: rgb(0, 0, 0);
+                            font-size: 1.5rem;
+                            padding: 5px;
+                            margin: 2px;
+                            border-radius: 5px;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 400;
+                            font-style: normal;
+
+                            &:hover {
+                                box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                                border-radius: 5px;
+                                color: rgba(255, 255, 255, 0.897);
+                                background-color: rgba(0, 0, 0, 0.76)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .main {
+        grid-area: main;
+        align-self: center;
+
+        .main__main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .main__titulo {
+                color: rgb(0, 0, 0);
+                font-family: 'Dancing Script', cursive;
+                font-size: clamp(2em, 4vw, 8em);
+            }
+
+            .main__subtitulo {
+                color: rgb(0, 0, 0);
+                font-family: 'Dancing Script', cursive;
+                font-size: clamp(1em, 2vw, 4em);
+            }
+        }
+    }
+
+    .image {
+        grid-area: image;
+        width: 4 0vw;
+        max-width: 1000px;
+        min-width: 320px;
+        margin: auto;
+
+        .image__fideos {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+}
