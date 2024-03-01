@@ -147,22 +147,6 @@ body {
   grid-area: footer;
 }
 
-@media screen and (max-width: 600px) {
-  /*diseño mobile de la pagina de los restaurantes*/
-  .containerRestaurante {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr auto auto auto 0.5fr;
-    grid-template-areas: "headerRestaurante" "mainRestaurante" "mainRestaurante" "mainRestaurante" "footerRestaurante";
-  }
-  .mainRestaurante {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-flow: row;
-    grid-template-areas: "restaurante1" "restaurante2" "restaurante3";
-    grid-area: mainRestaurante;
-  }
-}
 .containerCarta {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -465,6 +449,18 @@ body {
     grid-auto-flow: row;
     grid-template-areas: "iniciarsesion" "registrarse";
     grid-area: mainRegistrarse;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*diseño mobile de la pagina de los restaurantes*/
+  .containerRestaurante {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto auto auto 0.5fr;
+    grid-template-areas: "headerRestaurante" "mainRestaurante" "mainRestaurante" "mainRestaurante" "footerRestaurante";
+  }
+  .mainRestaurante {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "restaurante1" "restaurante2" "restaurante3" !important;
   }
 }
 

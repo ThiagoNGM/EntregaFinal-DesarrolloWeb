@@ -1,99 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu RincónPastaFresca</title>
-    <link rel="icon" type="image/.ico" href="../fotos/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/.ico" href="../fotos/favicon.ico" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <meta name="descrption="
-        content="Explora nuestra exquisita carta en RinconPastaFresca, donde la tradición italiana se combina con ingredientes frescos y sabores irresistibles. Desde clásicas pastas con salsas caseras hasta opciones vegetarianas y gourmet, nuestra variedad de platos te llevará en un viaje culinario único. ¡Descubre tu nueva pasta favorita con nosotros!">
-</head>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <meta
+      name="descrption="
+      content="Explora nuestra exquisita carta en RinconPastaFresca, donde la tradición italiana se combina con ingredientes frescos y sabores irresistibles. Desde clásicas pastas con salsas caseras hasta opciones vegetarianas y gourmet, nuestra variedad de platos te llevará en un viaje culinario único. ¡Descubre tu nueva pasta favorita con nosotros!"
+    />
+  </head>
 
-<body>
-
+  <body>
     <div class="containerCarta">
+      <header class="headerCarta">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav__nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img class="nav__logo" src="../fotos/pasta.png" alt="logo"
+            /></a>
 
-        <header class="headerCarta">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary nav__nav">
-                <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <a class="navbar-brand" href="../index.html"> <img class="nav__logo" src="../fotos/pasta.png"
-                            alt="logo"></a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ">
-                            <a class="nav-link nav__boton" href="./Restaurantes.html">Restaurantes</a>
-                            <a class="nav-link nav__boton" href="./carta.html">Carta</a>
-                            <a class="nav-link nav__boton" href="./nosotros.html">Nosotros</a>
-                            <a class="nav-link nav__boton" href="./registrarse.html">Registrarse</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main class="mainCarta">
-            <div class="comidaCarta">
-                <img class="imagenCarata" src="../fotos/imagenCarta.png" alt="">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link nav__boton" href="./Restaurantes.html"
+                  >Restaurantes</a
+                >
+                <a class="nav-link nav__boton" href="./carta.html">Carta</a>
+                <a class="nav-link nav__boton" href="./nosotros.html"
+                  >Nosotros</a
+                >
+                <a class="nav-link nav__boton" href="./registrarse.html"
+                  >Registrarse</a
+                >
+              </div>
             </div>
-            <h2 class="subtitulo">Especialidades</h2>
-            <center>
-                <p class="listadoComoidas">Pasta de colores ------- $9.99</p>
-                <p class="listadoComoidas">Spaghetti ------------- $9.99</p>
-                <p class="listadoComoidas">macarrones ---------- $14.99</p>
-                <p class="listadoComoidas">Fideos de arroz ------- $14.99</p>
-                <p class="listadoComoidas">Sopa de letras -------- $19.99</p>
-                <p class="listadoComoidas">Pasta al huevo -------- $19.99</p>
-                <p class="listadoComoidas" style="border-bottom: 2px solid black; padding-bottom: 29px;">Lasagna
-                    ------------- $24.99
-            </center>
-            </p>
-            <h2 class="subtitulo">Envios a domicilio </h2>
-            <center class="listadoComoidas"> Llamanos (351)99 99 9 99</center>
+          </div>
+        </nav>
+      </header>
 
-
-        </main>
-
-        <div class="mainCarta2">
-            <h2 class="subtitulo">Bebidas</h2>
-            <center>
-                <p class="listadoComoidas">Agua 1L/2L ---------- $9.99</p>
-                <p class="listadoComoidas">Soda 1L/2L ---------- $9.99</p>
-                <p class="listadoComoidas" style="border-bottom: 2px solid black; padding-bottom: 29px;">Coca-Cola 1L/2L
-                    ---- $19.99</p>
-                <h2 class="subtitulo">Postres</h2>
-                <p class="listadoComoidas">Helado ------------- $9.99</p>
-                <p class="listadoComoidas">Flan ---------------- $9.99</p>
-            </center>
-            <div class="comidaCarta">
-                <img class="imagenCarata" src="../fotos/postreCarta.png" alt="">
-            </div>
-
+      <main class="mainCarta">
+        <div class="comidaCarta">
+          <img class="imagenCarata" src="../fotos/imagenCarta.png" alt="" />
         </div>
+        <h2 class="subtitulo">Especialidades</h2>
+        <center>
+          <p class="listadoComoidas">Pasta de colores ------- $9.99</p>
+          <p class="listadoComoidas">Spaghetti ------------- $9.99</p>
+          <p class="listadoComoidas">macarrones ---------- $14.99</p>
+          <p class="listadoComoidas">Fideos de arroz ------- $14.99</p>
+          <p class="listadoComoidas">Sopa de letras -------- $19.99</p>
+          <p class="listadoComoidas">Pasta al huevo -------- $19.99</p>
+          <p
+            class="listadoComoidas"
+            style="border-bottom: 2px solid black; padding-bottom: 29px"
+          >
+            Lasagna ------------- $24.99
+          </p>
+        </center>
 
-        <footer class="footerCarta"></footer>
+        <h2 class="subtitulo">Envios a domicilio</h2>
+        <center class="listadoComoidas">Llamanos (351)99 99 9 99</center>
+      </main>
+
+      <div class="mainCarta2">
+        <h2 class="subtitulo">Bebidas</h2>
+        <center>
+          <p class="listadoComoidas">Agua 1L/2L ---------- $9.99</p>
+          <p class="listadoComoidas">Soda 1L/2L ---------- $9.99</p>
+          <p
+            class="listadoComoidas"
+            style="border-bottom: 2px solid black; padding-bottom: 29px"
+          >
+            Coca-Cola 1L/2L ---- $19.99
+          </p>
+          <h2 class="subtitulo">Postres</h2>
+          <p class="listadoComoidas">Helado ------------- $9.99</p>
+          <p class="listadoComoidas">Flan ---------------- $9.99</p>
+        </center>
+        <div class="comidaCarta">
+          <img class="imagenCarata" src="../fotos/postreCarta.png" alt="" />
+        </div>
+      </div>
+
+      <footer class="footerCarta"></footer>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
